@@ -1,0 +1,52 @@
+<div class="jumbotron">
+<h1>Registration form</h1>
+<br>
+<br>
+<form #studentForm="ngForm" (ngSubmit)="getStudentData(studentForm.value)">
+
+  <label> First Name: </label>
+  <br>
+  <input type="text" name="firstName" size="15" ngModel #firstName="ngModel"> <br> <br>
+  <label> Last Name: </label> 
+  <br>
+  <input type="text" name="lastName" size="15" ngModel #lastName="ngModel"> <br> <br>
+  <label> course Name: </label> 
+  <br>
+  <input type="text" name="course" size="15" ngModel #course="ngModel"> <br> <br>
+
+  <!-- <label> 
+  Course :
+  </label> 
+  <select>
+  <option value="Course" ngModel>Course</option>
+  <option value="BCA" ngModel>BCA</option>
+  <option value="BBA" ngModel>BBA</option>
+  <option value="B.Tech" ngModel>B.Tech</option>
+  <option value="MBA" ngModel>MBA</option>
+  <option value="MCA" ngModel>MCA</option>
+  <option value="M.Tech" ngModel>M.Tech</option>
+  </select>
+
+  <br>
+  <br>
+  <label> 
+  Gender :
+  </label><br>
+  <input type="radio" name="male" ngModel/> Male <br>
+  <input type="radio" name="female" ngModel/> Female <br>
+  <input type="radio" name="other" ngModel/> Other
+  <br>
+  <br>
+
+  <label> 
+  Phone :
+  </label>
+  <input type="text" name="country code"  value="+91" size="2" ngModel/> 
+  <input type="text" name="phone" size="10" ngModel/> <br> <br>
+  Address
+  <br>
+  <textarea cols="80" rows="5" value="address" ngModel> -->
+
+  <button>Submit</button>
+</form>
+</div>
